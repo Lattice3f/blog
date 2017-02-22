@@ -10,19 +10,10 @@
 #   description: >
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
-
-algorithms:
-  name: Algorithms
-  image: 
-  color: '#949667'
-  description: >
-    A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
     
-key-terms:
-  name: Key Terms
+datastructs:
+  name: Data Structures
   image:
   color: '#949667'
   description: >
-    Things to know
-
-
+    There are many ways to represent the world in a voxel-based game. This is where I'll go over what makes a representation good or bad and analyze some representations I've experimented with.

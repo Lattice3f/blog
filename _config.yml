@@ -46,6 +46,7 @@ author:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
     **Hey, I'm Travis.**
+    I'm making a game I'm calling Lattice 3F. It's a voxel-based game (like Minecraft) but with plans for pervasive physics, innovative graphics, clever artificial intelligence, and whatever else I find the time to add (and doesn't end up being impossible).
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

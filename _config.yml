@@ -21,7 +21,7 @@ paginate_path:       '/page-:num/'
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:         >
-  This is where I explain things about my video game.
+  A blog about the algorithms, data structures, and other juicy tech bits that I encounter while making my physics-enabled voxel-based game
 
 # The tags listed as entries in the sidebar
 sidebar_tags:        [key-terms, algorithms]
@@ -45,7 +45,7 @@ author:
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    **Hi, I'm Travis.**
+    **Hey, I'm Travis.**
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

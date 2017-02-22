@@ -24,7 +24,7 @@ description:         >
   A blog about the algorithms, data structures, and other juicy tech bits that I encounter while making my physics-enabled voxel-based game
 
 # The tags listed as entries in the sidebar
-sidebar_tags:        [key-terms, algorithms]
+sidebar_tags:        [datastructs]
 
 # Fallback image and color if not overwritten for tag or post
 image:               

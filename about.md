@@ -9,4 +9,4 @@ title: About
 {% endcomment %}
 {% include about-short.html author=site.author %}
 
-I'm making a game I'm calling Lattice 3F. It's a voxel-based game (like Minecraft) but with plans for pervasive physics, innovative graphics, clever artificial intelligence, and whatever else I find the time to add (and doesn't end up being impossible).
+

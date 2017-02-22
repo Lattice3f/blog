@@ -1,5 +1,5 @@
 ---
 layout: blog-by-tag
-tag: data structures
+tag: datastructs
 permalink: /tag/datastructs/
 ---

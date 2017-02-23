@@ -11,16 +11,16 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
     
-voxels-and-games:
-  name: Voxels and Games
+background:
+  name: Background
   image:
   color: '#949667'
   description: >
-    What is a voxel-based game? What is a voxel, even? These posts provide some background for those unfamiliar with voxel game dev.
+    These posts provide some background for those unfamiliar with some of the game dev concepts I use.
 
 data-structs:
   name: Data Structures
   image:
   color: '#949667'
   description: >
-    There are many ways to represent the world in a voxel-based game. This is where I'll go over what makes a representation good or bad and analyze some representations I've experimented with.
+    There are many ways to represent the world in a voxel-based game. This is where I go over what makes a representation good or bad and analyze some representations I've experimented with.

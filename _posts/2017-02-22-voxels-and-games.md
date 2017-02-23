@@ -17,7 +17,7 @@ The most prominent example of a voxel-based game is [Minecraft](https://minecraf
 Because of the prominence of a select few voxel-based games, it's easy to overindex on them when defining what a voxel-based game is. Let's go over some things that a voxel-based game _typically_ is but not necessarily.
 
 #### [A sandbox/open world game](https://en.wikipedia.org/wiki/Open_world)
-Just because the world is cubes doesn't mean it isn't focused on a story or mission. Of course, typically a voxel-based game isn't the best way to tell a story so a story-centric game is more likely to be made in a different genre. Voxel-based games that have stories usually don't focus on them because much of the value of making a game voxel-based is the freedom that it gives the players to do whatever they want.
+Just because the world is cubes doesn't mean it isn't focused on a story or mission. A voxel-based game isn't usually the best way to tell a story so a story-centric game is more likely to be made in a different genre. Voxel-based games that have stories often don't center the gameplay on them because much of the value of making a game voxel-based is the freedom that it gives the players to do whatever they want.
 
 #### [A procedurally-generated game](https://en.wikipedia.org/wiki/Procedural_generation)
 Just because the world is cubes doesn't mean a person didn't carefully arrange those cubes when making the game instead of having the computer generate it. That being said, procedural world generation makes every play of the game unique and is part of what makes the genre uniquely enjoyable.

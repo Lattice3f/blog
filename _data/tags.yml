@@ -11,7 +11,14 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
     
-datastructs:
+voxels-and-games:
+  name: Voxels and Games
+  image:
+  color: '#949667'
+  description: >
+    What is a voxel-based game? What is a voxel, even? These posts provide some background for those unfamiliar with voxel game dev.
+
+data-structs:
   name: Data Structures
   image:
   color: '#949667'

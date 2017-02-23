@@ -4,5 +4,5 @@ title: Voxels and Games
 tags: [background]
 ---
 
-# What is a Voxel-Based Game?
-well fuck if I know
+### What is a Voxel-Based Game?
+maybe this header is a reasonable size

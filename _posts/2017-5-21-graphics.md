@@ -15,7 +15,7 @@ Graphics cards understand a mesh as a list of vertices (3 floats) and a list of 
 
 `Triangles: [0, 1, 2]`
 
-The order that we specify the vertices in is important; it determines the direction of the face. Faces are only rendered in one direction; if you look at a face from the other side it's invisible (which explains some of the graphical weirdness if you've every clipped through an object in a game).
+The order that we specify the vertices in is important; it determines the direction of the face. Faces are only rendered in one direction; if you look at a face from the other side it's invisible (which explains some of the graphical weirdness if you've ever clipped through an object in a game).
 
 To make a quad (quadrilateral), we just need two triangles. We could just list out six vertices and make the two triangles like so:
 

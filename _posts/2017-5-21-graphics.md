@@ -4,7 +4,7 @@ title: Graphics
 tags: [data-structs]
 ---
 
-Graphics performance largely comes down to how many block faces we tell our graphics card to render. If we render fewer for the same number of blocks, then we can put more blocks on the screen at a time and/or turn up the graphics quality with higher resolution textures, bettering lighting qualities, etc.
+In voxel-based games, the biggest graphics performance optimizations we can make come down to how many block faces we tell our graphics card to render. If we render fewer for the same number of blocks, then we can put more blocks on the screen at a time and/or turn up the graphics quality with higher resolution textures, better lighting qualities, etc.
 
 ### Background on Quads
 In most game styles you just import your 3D models and the nitty-gritty of how the graphics works is handled for you by your game engine. In voxel-based games, our content is dynamic, so we'll need to be generating meshes for our world on-the-fly.

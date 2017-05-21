@@ -71,7 +71,7 @@ And then we add our final rectangle, which can't stretch at all:
 ```
 In this case the cover had an optimal rectangle count of 3, but in general it's only guaranteed to be within a factor of 8 of the optimal (according to the proof at [0fps.net](https://0fps.net/2012/06/30/meshing-in-a-minecraft-game/); I'd be lying if I said I fully understood it).
 
-My implementation of the algorithm can run on 8x8x8 block chunk in a single frame without the player even noticing, but you're like me and want to be able to multiple edits on multiple chunks in the same frame and have them all optimized by the next frame, this algorithm is going to give you some CPU trouble as it stands. If you're committed to making this work, though, there are lots of things you can do:
+My implementation of the algorithm can run on 8x8x8 block chunk in a single frame without the player even noticing, but if you're like me and want to be able to have multiple edits on multiple chunks in the same frame and have them all optimized by the next frame, this algorithm is going to give you some CPU trouble. If you're committed to making this work, though, there are lots of things you can do, including these:
 
 ##### 1. Don't re-run the algorithm every time the chunk is edited
 Let all the edits happen and run the algorithm each frame. This is kind of just common sense and speeds things up when the same chunk receives multiple edits in one frame.
@@ -79,7 +79,7 @@ Let all the edits happen and run the algorithm each frame. This is kind of just 
 ##### 2. Don't re-run the algoithm every frame
 When the chunk is edited during a frame, generate a non-optimized mesh (culled only, perhaps). Then, after it hasn't been edited for a while, generate an optimized mesh to replace the non-optimized one. This speeds things up when chunk edits tend to happen within the same few seconds (or whatever your optimization time interval is) and, as long as only a few chunks are in a non-optimized state at a time, shouldn't noticably impact graphics performance.
 
-When I implemented this, for added stability, I would run the pending chunk optimizations only until the current frame had taken 30ms. After simultaneously editing a bunch of chunks, there would be a 5s delay before they queued themselves for reoptimization, after which up to 30ms of each frame would be spent optimizing them. The result was reasonably stable graphics but 100% CPU usage for a few frames starting 5s after the edit.
+When I implemented this, for added stability, I would run the pending chunk optimizations only until the current frame had taken 30ms. After simultaneously editing a bunch of chunks, there would be a 5s delay before they queued themselves for reoptimization, after which up to 30ms of each frame would be spent optimizing them. The result was reasonably stable graphics but 100% CPU usage for a second or two starting 5s after the edit.
 
 ##### 3. Don't re-run the algorithm in full
 One can imagine a number of acceleration structures for doing edits to the rectangle cover without recomputing it in its entirety - one example would be storing the results for each slice independently and, when a one-block edit is made, recomputing the covers only for the 3 slices that contained that block. I moved on from the simple array representation before trying this, but if you give it a shot, let me know how it works out!

@@ -71,7 +71,7 @@ And then we add our final rectangle, which can't stretch at all:
 ```
 In this case the cover had an optimal rectangle count of 3, but in general it's only guaranteed to be within a factor of 8 of the optimal (according to the proof at [0fps.net](https://0fps.net/2012/06/30/meshing-in-a-minecraft-game/); I'd be lying if I said I fully understood it).
 
-My implementation of the algorithm can run on a decent sized chunk in a single frame without the player even noticing, but you're like me and want to be able to multiple edits on multiple chunks in the same frame and have them all optimized by the next frame, this algorithm is going to give you some CPU trouble as it stands. If you're committed to making this work, though, there are lots of things you can do:
+My implementation of the algorithm can run on 8x8x8 block chunk in a single frame without the player even noticing, but you're like me and want to be able to multiple edits on multiple chunks in the same frame and have them all optimized by the next frame, this algorithm is going to give you some CPU trouble as it stands. If you're committed to making this work, though, there are lots of things you can do:
 
 ##### 1. Don't re-run the algorithm every time the chunk is edited
 Let all the edits happen and run the algorithm each frame. This is kind of just common sense and speeds things up when the same chunk receives multiple edits in one frame.

@@ -33,7 +33,7 @@ We can start with the algorithm laid out in a great article at [0fps.net](https:
 m m m m
 m m m -
 ```
-Let's call the horizontal axis the u-axis and the vertical axis the v-axis, since the actual axes depend on which way you've taken the slice. We start by adding a rectangle that covers only one of thes cell with the smallest u-value, and among those cells the one with the smallest v-value:
+Let's call the horizontal axis the u-axis and the vertical axis the v-axis, since the actual axes depend on which way you've taken the slice. We start by adding a rectangle that covers only one of the cells with the smallest u-value, and among those cells the one with the smallest v-value:
 ```
 - m m m
 m m m m

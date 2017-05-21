@@ -9,7 +9,7 @@ In voxel-based games, the biggest graphics performance optimizations we can make
 ### Background on Quads
 In most game styles you just import your 3D models and the nitty-gritty of how the graphics works is handled for you by your game engine. In voxel-based games, our content is dynamic, so we'll need to be generating meshes for our world on-the-fly.
 
-Graphics cards understand a mesh as a list of vertices (3 floats) and a list of triangles whose vertices are among those in the first list (3 ints; each int is the index of a vertex in the list of vertices). For example, the following lists represent a single triangle:
+Graphics cards understand a mesh as a list of vertices (3 floats) and a list of triangles whose vertices are among those in the first list (ints taken 3 at a time; each int is the index of a vertex in the list of vertices). For example, the following lists represent a single triangle:
 
 `Vertices: [(0.0, 0.0, 0.0), (0.0, 1.0, 0.0), (1.0, 0.0, 0.0)]`
 
